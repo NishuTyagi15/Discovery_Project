@@ -1,1 +1,1 @@
-Our Worlds Webpage of Discovery Land Company Project
+Discovery Land Company Project
