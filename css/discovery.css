@@ -129,8 +129,7 @@ li {
 .logo-img2 {
     height: 39px;
     width: 36px;
-    padding: 0px 12px;
-    padding-left: 6.5rem;
+    padding-left: 10rem;
     filter: invert(100%) sepia(0%) saturate(0%) brightness(200%) contrast(100%);
 }
 
@@ -153,7 +152,7 @@ h4 {
 
 .foot-nav {
     display: flex;
-    padding-left: 28rem;
+    padding-left: 30rem;
 }
 
 a {
