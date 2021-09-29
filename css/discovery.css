@@ -19,7 +19,7 @@ body {
     padding-bottom: 142px;
 }
 
-.logo-content {
+.logo-content1 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     font-size: 0;
 }
 
-.logo-img {
+.logo-img1 {
     height: 39px;
     width: 36px;
     padding: 0px 12px;
@@ -115,19 +115,34 @@ li {
 
 /* Footer CSS */
 .footer-container {
-    height: 100%;
+    height: 94%;
     width: 100%;
     background-color: #161f1e;
 }
 
+.logo-content2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-img2 {
+    height: 39px;
+    width: 36px;
+    padding: 0px 12px;
+    padding-left: 6.5rem;
+    filter: invert(100%) sepia(0%) saturate(0%) brightness(200%) contrast(100%);
+}
+
 .foot-main {
     color: hsla(0,0%,100%,.75);
-    width: 100%;
     font-family: messina-sans;
     text-transform: uppercase;
-    font-size: .7rem;
+    font-size: .6rem;
     margin-bottom: .75rem;
     letter-spacing: -.01em;
+    font-family: Montserrat;
+    padding-left: 39px;
 }
 
 h4 {
@@ -138,15 +153,18 @@ h4 {
 
 .foot-nav {
     display: flex;
+    padding-left: 28rem;
 }
 
 a {
     text-decoration: none;
     line-height: 2;
-    font-size: .9rem;
-    margin: 0;
-    padding: 0;
+    font-size: 0.8rem;
     color: #fff;
+}
+
+.foot-items {
+    padding-top: 120px;
 }
 
 .foot-menu:not(:last-child) {
@@ -160,9 +178,15 @@ a {
 .footer-main {
     display: flex;
     flex-wrap: wrap;
+    font-family: Montserrat;
+    padding-top: 6rem;
 }
 
 .foot-end {
-    padding-bottom: 4.5rem;
+    font-family: Montserrat;
+    padding: 144px 20px 20px 96px;
     display: flex;
+    font-size: 0.7rem;
+    opacity: 0.75;
+    color: hsla(0,0%,100%,.75);
 }
