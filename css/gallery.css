@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 65%;    
+}
+
+.item-container {
+    position: absolute;
+    top: -130px;
+    left: -130px;
+    font-weight: 600;
+}
+
+.gitems {
+    position: absolute;
+    font-size: 4.4rem;
+    font-family: 'Cormorant Garamond', serif;
+    bottom: 85px;
+    left: 140px;
+}
+
+.gmain-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(24, 23, 23);
+    height: 125%;
+    width: 100%;
+}
+
+
+.gmain-items {
+    height: 302px;
+}
+
+.gimage {
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+main {
+    display: block;
+}
+
+.gtitle {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 0;
+}
