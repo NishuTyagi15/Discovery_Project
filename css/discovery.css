@@ -125,7 +125,7 @@ ul {
 
 .foot-end {
     font-family: Montserrat;
-    padding: 0px 50px;
+    padding: 0px 60px;
     font-size: 0.82rem;
     opacity: 0.75;
     color: hsla(0,0%,100%,.75);
@@ -137,4 +137,74 @@ ul {
     .nav-content {
         display: none;
     }    
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo-content2 {
+        padding-left: 0px;
+    }
+    .foot-items {
+        width: 33%;
+        margin-left: 8rem;
+        margin-top: 20px;
+    }
+    .footer-container {
+        height: 40%;
+    }
+    .footer-main {
+        flex-wrap: nowrap;
+    }
+    .foot-end {
+        padding-left: 120px;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .logo-img2 {
+        padding-bottom: 14rem;
+    }
+    .all-foot {
+        padding: 0px 7px;
+    }
+    .foot-items {
+        margin-left: -85px;
+    }
+    .foot-end {
+        width: 100%;
+        font-size: 0.7rem;
+        padding-top: 0px;
+    }
+}
+
+/* mini Phones */
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    .all-foot {
+        padding: 0px 10px;
+    }
+    .logo-content2 {
+        padding-bottom: 170px;
+        width: 30%;
+    }
+    .foot-items {
+        margin-left: -86px;
+    }
+    a {
+        font-size: 9px;
+    }
+    .foot-main {
+        font-size: 9px;
+    }
+    .footer-main {
+        margin-top: 20px;
+    }
+    .foot-end {
+        font-size: 0.51rem;
+        width: 120%;
+        padding-left: 40px;
+    }
+    .footer-container {
+        height: 80%;
+    }
 }
