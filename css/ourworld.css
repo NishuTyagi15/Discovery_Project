@@ -45,3 +45,88 @@ html, body {
     margin-top: -0.1rem;
     padding-left: 2px;
 }
+
+
+/* Media Queries */
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-content {
+        width: 96.5%;
+        height: 257%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .logo-content2 {
+        padding-left: 40px;
+    }
+    .foot-items {
+        width: 33%;
+        margin-left: 8rem;
+        margin-top: 20px;
+    }
+    .footer-container {
+        height: 40%;
+    }
+    .footer-main {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Moto G4 Galaxy S5 */
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        width: 92%;
+        height: 550%;
+    }
+    .logo-img1 {
+        width: 33vw;
+    }
+    .logo-img2 {
+        padding-bottom: 14rem;
+    }
+    .all-foot {
+        padding: 0px 60px;
+    }
+    .foot-items {
+        margin-left: -85px;
+    }
+    .foot-end {
+        font-size: 0.46rem;
+        padding-top: 0px;
+    }
+}
+
+/* JioPhone 2 */
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        width: 91%;
+        height: 1400%;
+    }
+    .logo-img1 {
+        width: 36vw;
+    }
+    .all-foot {
+        padding-top: 7px;
+    }
+    .logo-content2 {
+        padding-bottom: 180px;
+        width: 30%;
+    }
+    .foot-items {
+        margin-left: -87px;
+    }
+    a {
+        font-size: 8px;
+    }
+    .foot-main {
+        font-size: 8px;
+    }
+    .foot-end {
+        font-size: 0.51rem;
+        width: 60%;
+        padding-top: 0px;
+        padding-left: 42px;
+    }
+}
