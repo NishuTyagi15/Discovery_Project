@@ -63,14 +63,14 @@ body {
 
 /* Footer CSS */
 .footer-container {
-    height: 70%;
+    height: 65%;
     width: 100%;
     background-color: #161f1e;
 }
 
 .all-foot {
     display: flex;
-    padding: 0px 100px;
+    padding: 0px 70px;
     align-items: center;
 }
 
@@ -102,7 +102,7 @@ h4 {
 a {
     text-decoration: none;
     line-height: 2;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #fff;
 }
 ul {
@@ -111,22 +111,22 @@ ul {
 
 .foot-items {
     width: 100%;
-    margin-left: 30rem;
+    margin-left: 33rem;
     margin-top: 20px;
 }
 
 .footer-main {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 200%;
     margin-top: 50px;
     font-family: Montserrat;
 }
 
 .foot-end {
     font-family: Montserrat;
-    padding: 87px 93px;
-    font-size: 0.7rem;
+    padding: 0px 60px;
+    font-size: 0.82rem;
     opacity: 0.75;
     color: hsla(0,0%,100%,.75);
 }
@@ -137,4 +137,82 @@ ul {
     .nav-content {
         display: none;
     }    
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo-content2 {
+        padding-left: 0px;
+    }
+    .foot-items {
+        width: 33%;
+        margin-left: 8rem;
+        margin-top: 20px;
+    }
+    .footer-container {
+        height: 40%;
+    }
+    .footer-main {
+        flex-wrap: nowrap;
+    }
+    .foot-end {
+        padding-left: 120px;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .all-foot {
+        padding: 0px 7px;
+        flex-flow: column;
+        align-items: unset;
+    }
+    .logo-content2 {
+        padding-left: 40px;
+        padding-top: 32px;
+    }
+    .foot-items {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .footer-main {
+        margin-top: 0px;
+    }
+    .foot-end {
+        font-size: 0.55rem;
+        padding: 0px 47px;
+    }
+}
+
+/* mini Phones */
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    .all-foot {
+        padding: 0px 7px;
+        flex-flow: column;
+        align-items: unset;
+    }
+    .logo-content2 {
+        padding-left: 40px;
+        padding-top: 32px;
+    }
+    .foot-items {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    a {
+        font-size: 9px;
+    }
+    .foot-main {
+        font-size: 9px;
+    }
+    .footer-main {
+        margin-top: 0px;
+    }
+    .foot-end {
+        font-size: 0.55rem;
+        padding: 0px 47px;
+    }
+    .footer-container {
+        height: 85%;
+    }
 }
