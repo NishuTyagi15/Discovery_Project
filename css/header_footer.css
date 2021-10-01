@@ -43,20 +43,7 @@ body {
 }
 
 .container {
-    cursor: pointer;
-}
-  
-.bar1, .bar2 {
-    width: 21px;
-    height: 2px;
-    background-color: #fff;
-    margin: 4px 0;
-}
-.bar3 {
-    width: 16px;
-    height: 2px;
-    background-color: #fff;
-    margin: 4px 0;
+    display: none;
 }
 
 
@@ -136,7 +123,27 @@ ul {
 @media screen and (max-width:600px) {
     .nav-content {
         display: none;
-    }    
+    }
+    
+    .container {
+        display: flex;
+        flex-flow: column;
+        cursor: pointer;
+    }
+
+    .bar1, .bar2 {
+        width: 21px;
+        height: 1.5px;
+        background-color: #fff;
+        margin: 1.5px 0;
+    }
+
+    .bar3 {
+        width: 16px;
+        height: 1.5px;
+        background-color: #fff;
+        margin: 1.5px 0;
+    }
 }
 
 /* Tablets */
