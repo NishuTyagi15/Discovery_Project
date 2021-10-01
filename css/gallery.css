@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -14,14 +15,14 @@ html, body {
 
 .item-container {
     position: absolute;
-    top: -130px;
+    top: -120px;
     left: -130px;
     font-weight: 600;
 }
 
 .gitems {
     position: absolute;
-    font-size: 4.4rem;
+    font-size: 3.8rem;
     font-family: 'Cormorant Garamond', serif;
     bottom: 85px;
     left: 140px;
@@ -75,7 +76,7 @@ html, body {
 /* Mobiles */
 @media screen and (min-width: 360px) and (max-width: 640px) {
     .gmain-content {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .item-container {
         top: -31%;
@@ -96,7 +97,7 @@ html, body {
         font-size: 0.9rem;
     }
     .footer-container {
-        height: 68%;
+        height: 70%;
     } 
 }
 
