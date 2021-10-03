@@ -153,15 +153,16 @@ function ourWorld_content() {
             subtitle: "Scottsdale, Arizona"
         }
     ];
+
+    var content= '';
+
+    ourWorld.forEach(element=> {
+        content += `<div class="main-items">
+        <img class="image" src="${element.image}">
+        <h1 class="item1">${element.title}</h1>
+        <p class="item2">${element.subtitle}</p>
+    </div>`
+    });
+    
+    document.querySelector('#main').innerHTML=content;
 }
-
-var content= '';
-
-ourWorld.forEach(element=> {
-    content += `<div class="main-items">
-    <img class="image" src="${element.image}">
-    <h1 class="item1">${element.title}</h1>
-    <p class="item2">${element.subtitle}</p>
-</div>`
-});
-document.querySelector('#main').innerHTML=content;

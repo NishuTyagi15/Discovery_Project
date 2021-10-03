@@ -9,6 +9,9 @@ html, body {
     margin: 0;
     overflow-x: hidden;
 }
+ body {
+    background-color: whitesmoke;
+ }
 
 /* Header */
 
@@ -172,10 +175,11 @@ html, body {
 
 /* section3 */
 
-.img_trail{
-    height: 613px;
-    /* margin: auto; */
-    /* margin-left: 0%; */
+/* image trail */
+.section3{
+    height: 600px;
+    margin: auto;
+    margin-left: 0%;
     position: relative;
     width: 90%;
     display: grid;
@@ -183,35 +187,36 @@ html, body {
 }
 
 .img_track{
+    margin-top: 15px;
     display: flex;
     width: fit-content;
+    background: #fff;
     animation: scroll 100s linear infinite;
 }
 
-.trails{
-    /* height: 100px; */
+.track{
     display: flex;
     align-items: center;
     padding-right: 15px;
     position: relative;
 }
 
-.trail_titles{
+.track_main{
     position: absolute;
     color: #fff;
-    font-family: 'Martel Sans', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 30px;
     margin-top: 270px;
 }
-
-.sub_title{
+.track_sub{
     margin-top: -15px;
+    margin-left:5px;
     color: #FFFFFFBF;
 }
 
-.trails img{
+.track img{
     height: 450px;
-    width: 370px;
+    width: 350px;
     filter: brightness(70%);
 }
 
@@ -224,11 +229,69 @@ html, body {
     }
 }
 
+
+/* section4 */
+
+.section4{
+    margin-top: 40px;
+    background-color: whitesmoke;
+}
+
+.world-map{ 
+    height: 1210px;
+    margin-left: -20rem;
+    background-position: 100%;
+    width: 94%;
+    background-image: url(../assets/home/globe.jpg);
+    background-size: 832px 669px;
+    margin-top: -227px;
+    background-repeat: no-repeat;
+}
+
+
+.gtext1,.gtext2{
+    margin-left: 7.7rem;
+    font-size: 38px;
+}
+
+.gtext1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gtext2{
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: -0.2rem;
+}
+
+.description{
+    padding-top: 10px;
+    font-size: 15px;
+    margin-left: 4.2rem;
+    color: grey;
+}
+
+.places{
+    display: flex;
+    padding-top: 20px;
+    margin-left: 4.2rem;
+    font-size: 15px;
+}
+
+p{
+    margin-left: 60px;
+}
+
+.place-box{
+    background-color: rgb(23, 23,23);
+}
+
+
+
 /* section5 */
 
 .section5 {
     height: 127%;
-    margin-top: 81px;
+    margin-top: -270px;
     display: flex;
     flex-flow: row;
 }
@@ -279,7 +342,7 @@ html, body {
     background-color: transparent;
     position: relative;
     bottom: 700px;
-    left: 920px;
+    left: 1100px;
     font-size: xxx-large;
     border: 0px;
 }
