@@ -1,7 +1,3 @@
-* {
-    /* box-sizing: border-box; */
-}
-
 html, body {
     height: 100%;
     width: 100%;
@@ -37,6 +33,11 @@ html, body {
     font-weight: 900;
     color: #FFFFFF;
     z-index: 5;
+}
+
+.close-img {
+    top: 68px;
+    right: 57px;
 }
 
 .menubar {
@@ -172,6 +173,85 @@ html, body {
     letter-spacing: 4px;
 }
 
+.arrows1 ul {
+    position: relative;
+    bottom: -155px;
+    left: 750px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.arrows1 ul li {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 3px 3px #888888;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+
+.arrows1 ul li span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #000;
+}
+
+.arrows1 ul li.prev span {
+    top: 50%;
+    left: 14%;
+    transform: translateY(-50%) rotate(136deg);
+    border-left: none;
+    border-top: none;
+}
+
+.arrows1 ul li.prev span::before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background-color: #000;
+    transform-origin: right;
+    transform: rotate(45deg) translate(0, 25px) scaleX(1);
+}
+
+.arrows1 ul li:hover {
+    background: #000;
+}
+
+.arrows1 ul li span:hover {
+    border: 4px solid #fff;
+}
+
+.arrows1 ul li.prev:hover span::before {
+    background-color: #fff;
+}
+
+.arrows1 ul li.next span {
+    top: 50%;
+    right: 14%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none;
+}
+
+.arrows1 ul li.next span::before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background-color: #000;
+    transform-origin: right;
+    transform: rotate(45deg) translate(0, 25px) scaleX(1);
+}
+
+.arrows1 ul li.next:hover span::before {
+    background-color: #fff;
+}
 
 /* section3 */
 
@@ -237,7 +317,7 @@ html, body {
     background-color: whitesmoke;
 }
 
-.world-map{ 
+.world_map{ 
     height: 1210px;
     margin-left: -20rem;
     background-position: 100%;
@@ -273,30 +353,58 @@ html, body {
 .places{
     display: flex;
     padding-top: 20px;
-    margin-left: 4.2rem;
-    font-size: 15px;
+    margin-left: 7.9rem;
+    font-size: 16px;
 }
 
-p{
+.places p {
+    margin-right: 4%;
+}
+
+.description p{
     margin-left: 60px;
 }
 
-.place-box{
+.place_box{
     background-color: rgb(23, 23,23);
 }
 
+.globe_main {
+    display: flex;
+    justify-content: space-between;
+}
 
+.right_div{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 20px;
+}
+.stack_bottom{
+    width: 107%;
+    height: 94%;
+    position: absolute;
+    top: -830px;
+    right: -22px;
+    background-color: #161f1e;
+    z-index: 2;
+}
+
+.stack_top {
+    position: absolute;
+}
 
 /* section5 */
 
 .section5 {
     height: 127%;
-    margin-top: -270px;
+    margin-top: -810px;
     display: flex;
     flex-flow: row;
 }
 
 .img1 {
+    cursor: pointer;
     height: 127vh;
     width: 34vw;
 }
@@ -343,11 +451,91 @@ p{
     position: relative;
     bottom: 700px;
     left: 1100px;
+    cursor: pointer;
     font-size: xxx-large;
     border: 0px;
 }
 
+.arrow1 ul {
+    position: relative;
+    bottom: -50px;
+    left: 370px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 10;
+}
+
+.arrow1 ul li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.arrow1 ul li span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #fff;
+    transition: .5s ease;
+}
+
+.arrow1 ul li.next span {
+    top: 50%;
+    right: 87.8%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none;
+}
+
+.arrow1 ul li.next span::before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background-color: #fff;
+    transform-origin: right;
+    transform: rotate(45deg) translate(0, 25px) scaleX(1);
+}
 
 .footer-container {
     height: 60%;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .section1 {
+        margin-top: -569px;
+    }
+    .arrow1 ul {
+        left: 495px;
+    }
+    .gtext1, .gtext2 {
+        margin-left: 5rem;
+    }
+    .description {
+        margin-left: 1.4rem;
+    }
+    .places {
+        margin-left: -3.6rem;
+    }
+    .img1{
+        height: 58vh;
+    }
+    .img_title {
+        font-size: 25px;
+        margin-top: -356px;
+    }
+    .arrow1 ul li.next span {
+        right: 180%;
+    }
+    
 }

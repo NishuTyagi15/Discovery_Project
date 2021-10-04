@@ -7,7 +7,7 @@ function header_content() {
         <img class="logo-img1" src="../assets/header/namelogo.svg" alt="Logo Image">
     </div>
         <div class="nav-content">
-            <div class="u1"><a href="#">About DLC</a></div>
+            <div class="u1"><a href="../pages/aboutDLC.html">About DLC</a></div>
             <div class="u2"><a href="../pages/ourWorld.html">Our Worlds</a></div>
             <div class="u3"><a href="#">Experiences</a></div>
             <div class="u4"><a href="../pages/gallery.html">Gallery</a></div>
