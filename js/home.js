@@ -1,7 +1,7 @@
 function videoImage1() {
     const content = `<div video1">
-    <video class="img_v1" src="../assets/home/video1.mp4" data-length="" muted loop autoplay playsinline></video>
-    <button class="closebtn" onclick="document.querySelector('#img_video1').innerHTML=''">&times;</button>
+    <video style="width: 100vw" class="img_v1" src="../assets/home/video1.mp4" data-length="" muted loop autoplay playsinline></video>
+    <button class="closebtn" onclick="closeAll()">&times;</button>
     </div>
   <h1 class="v_title">Experiences</h1>
   <p class="p_text">
@@ -15,8 +15,8 @@ function videoImage1() {
 
 function videoImage2() {
     const content = `<div video1">
-    <video class="img_v2" src="../assets/home/video2.mp4" data-length="" muted loop autoplay playsinline></video>
-    <button class="closebtn" onclick="document.querySelector('#img_video2').innerHTML=''">&times;</button>
+    <video style="width: 100vw" class="img_v2" src="../assets/home/video2.mp4" data-length="" muted loop autoplay playsinline></video>
+    <button class="closebtn" onclick="closeAll()">&times;</button>
     </div>
   <h1 class="v_title">Lifestyle</h1>
   <p class="p_text">
@@ -30,8 +30,8 @@ function videoImage2() {
 
 function videoImage3() {
     const content = `<div video1">
-    <video class="img_v3" src="../assets/home/video3.mp4" data-length="" muted loop autoplay playsinline></video>
-    <button class="closebtn" onclick="document.querySelector('#img_video3').innerHTML=''">&times;</button>
+    <video style="width: 100vw" class="img_v3" src="../assets/home/video3.mp4" data-length="" muted loop autoplay playsinline></video>
+    <button class="closebtn" onclick="closeAll()">&times;</button>
     </div>
   <h1 class="v_title">Wellness</h1>
   <p class="p_text">
@@ -43,6 +43,24 @@ function videoImage3() {
 
 }
 
+function closeAll() {
+    const content = `<div class="sec5_img" id="img_video1">
+    <img class="img1" src="../assets/home/manexp.jpg" onclick="videoImage1()">
+    <div class="img_title">Experiences</div>
+    <button class="next_btn">&rarr;</button>
+  </div>
+  <div class="sec5_img" id="img_video2">
+    <img class="img1" src="../assets/home/lifestyle.jpg" onclick="videoImage2()">
+    <div class="img_title">Lifestyle</div>
+    <button class="next_btn">&rarr;</button>
+  </div>
+  <div class="sec5_img" id="img_video3">
+    <img class="img1" src="../assets/home/wellness.jpg" onclick="videoImage3()">
+    <div class="img_title">Wellness</div>
+    <button class="next_btn">&rarr;</button>
+  </div>`
+  document.querySelector('#closebtn').innerHTML = content;
+}
 
 window.onload = home_content();
 

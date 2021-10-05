@@ -148,6 +148,10 @@ html, body {
     height: 105vh;
 }
 
+.dlc_img0 {
+    display: none;
+}
+
 /* section 3 */
 
 .section3_dlc {
@@ -205,18 +209,18 @@ html, body {
 
 .arrows1 ul li span {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 3px solid #000;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
 }
 
 .arrows1 ul li span:hover {
-    border: 3px solid #fff;
+    border: 1px solid #fff;
 }
 
 .arrows1 ul li.prev span {
     top: 50%;
-    left: 13.5%;
+    left: 16.5%;
     transform: translateY(-50%) rotate(136deg);
     border-left: none;
     border-top: none;
@@ -225,11 +229,11 @@ html, body {
 .arrows1 ul li.prev span::before {
     content: '';
     position: absolute;
-    width: 38px;
-    height: 3px;
+    width: 25px;
+    height: 1.4px;
     background-color: #000;
     transform-origin: right;
-    transform: rotate(45deg) translate(0, 25px) scaleX(1);
+    transform: rotate(45deg) translate(0, 18px) scaleX(1);
 }
 
 .arrows1 ul li.prev:hover span::before {
@@ -238,7 +242,7 @@ html, body {
 
 .arrows1 ul li.next span {
     top: 50%;
-    right: 13.5%;
+    right: 16.5%;
     transform: translateY(-50%) rotate(-45deg);
     border-left: none;
     border-top: none;
@@ -247,11 +251,11 @@ html, body {
 .arrows1 ul li.next span::before {
     content: '';
     position: absolute;
-    width: 38px;
-    height: 3px;
+    width: 25px;
+    height: 1.4px;
     background-color: #000;
     transform-origin: right;
-    transform: rotate(45deg) translate(0, 25px) scaleX(1);
+    transform: rotate(45deg) translate(0, 18px) scaleX(1);
 }
 
 .arrows1 ul li.next:hover span::before {
@@ -270,7 +274,7 @@ html, body {
     display: flex;
     width: fit-content;
     background: #fff;
-    animation: scroll 25s linear infinite;
+    animation: scroll 50s linear infinite;
 }
 
 .track{
@@ -341,6 +345,9 @@ html, body {
     position: relative;
     top: 14%;
     left: 24%;
+}
+.dlc_img01 {
+    display: none;
 }
 
 .h1_dlc {
@@ -467,169 +474,208 @@ html, body {
 
 /* Media Queries */
 
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    
+}
+
+
 @media screen and (min-width: 700px) and (max-width: 900px) {
-    .dlc_head {
-        height: 50%;
+    /* header section */
+    .dlc_header {
+        height: 50vh;
     }
     .dlc_head_img {
         height: 50vh;
     } 
     .dlc_title {
-        top: 19%;
+        top: 38%;
     }   
     .dlc_title1 {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }    
     .dlc_title2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.6px
     }     
     .dlc_scroll {
         display: none;
     }
     .scroll_btn {
-        top: 37%;
+        top: 73%;
         right: 44%;
-        height: 6vh;
-        width: 9vw;
+        height: 7vh;
+        width: 10vw;
     }
+    .close-img {
+        top: 5%;
+        right: 3.5%;
+    }
+    /* section 1 */
     .section1_dlc {
         font-size: 1.8rem;
-        left: 4%;
-        top: -40%;
-        width: 92%;
+        left: 3%;
+        top: 7%;
+        width: 93%;
         height: 30%;
     }
+    /* section 2 */
     .section2_dlc {
         position: relative;
-        top: -45%;
+        top: 2%;
+        height: 130vh;
         grid-template-columns: 1fr;
     }
-    .section3_dlc {
+    .dlc_img0 {
+        display: block;
         position: relative;
-        height: 42vh;
-        top: -48%;
-    }
-    .section4_dlc {
-        position: relative;
-        top: -18%;
-        height: 16vh;
-    }
-
-    .section5_dlc {
-        position: relative;
-        top: 37%;
-    }
-    .section6_dlc {
-        position: relative;
-        height: 43vh;
-        top: 36%;
+        width: 68vw;
+        height: 66vh;
     }
     .left_sec1 {
-        top: 2%;
-        left: 28%;
-        width: 44%;
+        left: 16%;
+        top: 4%;
+    }
+    .h_dlc {
+        position: relative;
+        top: 4%;
+        left: 11%;
     }
     .p_dlc {
-        font-size: 0.9rem;
+        position: relative;
+        font-size: 0.8rem;
+        color: black;
+        top: 3%;
+        left: 11%;
+        width: 47vw
+    }
+    /* section 3 */
+    .section3_dlc {
+        height: 40vh;
+        width: 100vw;
+        position: relative;
+        top: 7%;
     }
     .dlc_img1 {
-        width: 63vw;
-        top: -11%;
-        left: 20%;
-        height: 66vh;
+        display: none;
     }
     .dlc_img2 {
         height: 40vh;
-        top: 3%;
+        top: -15%;
     }
     .dlc {
         font-size: 1.9rem;
-        top: -132%;
+        height: 21%;
         left: 9%;
     }
     .arrows1 ul {
-        top: -120%;
-        left: 234%;
+        top: 54%;
+        left: 214%
+    }
+    /* section 4 */
+    .section4_dlc {
+        position: relative;
+        height: 22vh;
+    }
+    /* section 5 */
+    .section5_dlc {
+        height: 42vh;
     }
     .track img {
-        height: 48vh;
-        width: 55vw;
+        height: 42vh;
+        width: 52vw;
+        position: relative;
+        top: -5%;
     }
-    .track {
-        top: -870px;
+    .track_sub{
+        width: 40vw;
+    }
+    /* section 6 */
+    .section6_dlc {
+        height: 51vh;
     }
     .dlc_img3 {
         height: 43vh;
         position: relative;
-        top: -1330px;
+        top: 16%;
     }
+    /* section 7 */
     .section7_dlc {
         position: relative;
         grid-template-columns: 1fr;
-        top: -88%;
-        height: 125vh;
+        height: 112vh;
     }
-    .dlc_img4 {
-        height: 72vh;
-        width: 76vw;
-        left: 12%;
+    .left_sec7 {
+        display: none;
     }
     .h1_dlc {
-        top: -3%;
+        top: 3%;
         left: 12%;
     }
     .p1_dlc {
-        top: -4%;
         left: 12%;
-        width: 43%;
-        font-size: 1rem;
+        top: 2%;
+        width: 46%;
+        font-size: 0.8rem;
+    }
+    .dlc_img01 {
+        display: block;
+        position: relative;
+        height: 70vh;
+        width: 76vw;
+        top: 6%;
+        left: 12%;    
     }
     .dlc_img5 {
         display: none;
     }
     .dlc_img6 {
-        height: 38vh;
-    }
-    .section8_dlc {
+        height: 42vh;
         position: relative;
-        top: -88%;
-        height: 38vh;
+        top: 20%;
     }
+    /* section 8 */
+    .section8_dlc {
+        height: 49vh;
+    }
+    /* section 9 */
     .section9_dlc {
-        margin-top: -125%;
-        height: 140vh;
+        height: 125vh;
         grid-template-columns: 1fr;
     }
     .left_sec9 {
         position: relative;
+        top: -8%;
     }
     .dlc_img7 {
         display: none;
     }
     .h2_dlc {
         left: 12%;
+        font-size: 2.2rem;
     }
     .p2_dlc {
-        font-size: 1rem;
+        font-size: 0.88rem;
         left: 12%;
-        width: 54%;
+        width: 48%;
+        color: #000;
     }
     .dlc_img8 {
         height: 74vh;
         width: 78vw;
         left: 11%;
-        margin-top: -12%;
+        top: -6%;
     }
+    /* section 10 */
     .section10_dlc {
-        position: relative;
-        height: 40vh;
+        height: 43.5vh;
     }
     .dlc_img9 {
-        height: 40vh;
-        width: 77vh;
+        height: 44vh;
+        width: 82vh;
     }
     .h3_dlc {
         left: 31%;
+        font-size: 2.4rem;
     }
     .btn {
         left: 36%;
@@ -677,16 +723,15 @@ html, body {
         grid-template-columns: 1fr;
     }
     .section3_dlc {
-        position: relative;
-        height: 42vh;
-        top: 10%;
+        margin-top: -48px;
+        height: 60vh;
+        width: 100vw;
     }
     .section4_dlc {
         position: relative;
         top: 50;
         height: 16vh;
     }
-
     .section5_dlc {
         position: relative;
         top: 37%;
@@ -700,9 +745,6 @@ html, body {
         top: 2%;
         left: 28%;
         width: 44%;
-    }
-    .p_dlc {
-        font-size: 0.9rem;
     }
     .dlc_img1 {
         width: 63vw;
