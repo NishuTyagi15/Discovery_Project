@@ -60,20 +60,20 @@ html, body {
 
 .htitle1 {
     font-size: 4.9rem;
-    margin-bottom: -60px;
+    margin-bottom: -32px;
 }
 
 .htitle2 {
     font-size: 4.5rem;
     letter-spacing: 5px;
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .hscroll {
     position: relative;
     color: #fff;
     opacity: 0.8;
-    top: -250px;
+    top: -210px;
     left: 77px;
 }
 
