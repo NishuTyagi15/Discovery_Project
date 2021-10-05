@@ -35,17 +35,16 @@ html, body {
     z-index: 5;
 }
 
-.close-img {
-    top: 68px;
-    right: 57px;
+.logo-img1 {
+    width: 35vw;
 }
 
 .menubar {
     z-index: 10;
 }
 
-.hvideo {
-    height: 24vh;
+.bg_video {
+    width: 100vw;
 }
 
 .htitle {
@@ -71,11 +70,23 @@ html, body {
 }
 
 .hscroll {
-    position: absolute;
+    position: relative;
     color: #fff;
     opacity: 0.8;
-    bottom: -347px;
-    left: 120px;
+    top: -250px;
+    left: 77px;
+}
+
+.scroll_btn {
+    position: absolute;
+    bottom: 29%;
+    right: 10%;
+    height: 12vh;
+    width: 6vw;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    border-radius: 50%;
 }
 
 /* section1 */
@@ -99,30 +110,29 @@ html, body {
 
 .sec1_header{
     color: #000;
-    font-weight: 200;
     font-family: 'Martel sans', sans-serif;
     font-weight: lighter;
-    font-size: 40px;
-    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
     margin-left: 7%;
 }
 
 .welcome {
-    margin-bottom: -30px;
+    margin-bottom: -25px;
 }
 
 .world {
-    margin-bottom: -20px;
+    letter-spacing: .3rem;
 }
 
 .section1_content{
     color: #777777;
-    margin-top: 50px;
-    font-size: .8rem;
-    line-height: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     margin-left: 7%;
+    width: 32vw;
 }
 
 .sec1_img2{ 
@@ -142,6 +152,9 @@ html, body {
     height: 100%;
     width: 108%;
     margin-top: 22px;
+}
+.sec1_img0 {
+    display: none;
 }
 
 /* section 2 */
@@ -282,7 +295,7 @@ html, body {
 .track_main{
     position: absolute;
     color: #fff;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Spectral', serif;
     margin-left: 30px;
     margin-top: 270px;
 }
@@ -572,30 +585,435 @@ html, body {
 /* media queries */
 
 @media only screen and (min-width: 768px) and (max-width:1024px) {
+    /* header */
+    .logo-img1 {
+        width: 55%;
+    }
+    .home_header {
+        height: 68%;
+    }
+    .bg_video {
+        width: unset;
+        height: 65vh;
+    }
+    .htitle {
+        top: 42%;
+        left: 21%;
+    } 
+    .htitle1 {
+        font-size: 4rem;
+        line-height: 1.5rem;
+        margin-bottom: 0%;
+    }   
+    .htitle2 {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+        margin-left: -1px;
+    }    
+    .hscroll {
+        top: -86px;
+        left: 13%;
+    }
+    .scroll_btn {
+        top: 75%;
+        /* right: 10%; */
+        height: 8vh;
+        width: 11vw;
+    }
+    .close-img {
+        top: 6.5%;
+        right: 5.5%;
+    }    
+    /* section 1 */
+    .sec1_header {
+        line-height: 4.8rem;
+        font-size: 3rem;
+        letter-spacing: 0rem;
+        position: relative;
+        left: 18%;
+    }
+    .world {
+        letter-spacing: 0rem;
+    }
     .section1 {
-        margin-top: -569px;
+        height: 190vh;
+        background-image: none;
     }
-    .arrow1 ul {
-        left: 495px;
+    .left-div {
+        width: 140vw;
+        margin-left: -12%;
     }
-    .gtext1, .gtext2 {
-        margin-left: 5rem;
+    .section1_content {
+        font-size: 1rem;
+        line-height: 2.2rem;
+        width: 69%;
+        position: relative;
+        left: 11%
+    }
+    .sec1_img3 {
+        display: none;
+    }
+    .sec1_img0 {
+        display: block;
+        width: 73vw;
+        position: relative;
+        top: 6%;
+        left: 26%;
+    }
+    .sec1_img2 {
+        width: 100vw;
+        height: 51vh;
+        margin-left: 12%;
+        padding-top: 14rem;
+    }
+    /* section 2 */
+    .section2_content {
+        flex-flow: row;
+    }
+    .section2 {
+        height: 28vh;
+    }
+    .arrows1 ul {
+        bottom: -121px;
+        left: 236%;
+    } 
+    /* section 3 */
+    .section3 {
+        height: 68vw;
+    }
+    .track img {
+        height: 50vh;
+        width: 365px;
+    }
+    .img_track {
+        margin-top: -1%;
+    }
+    .track_main {
+        margin-top: 125px;
+        font-weight: lighter;
+    } 
+    /* section 4 */
+    .gtext1,.gtext2 {
+        font-size: 40px;
+        margin-left: 5rem;    
+    }   
+    .description p {
+        margin-left: 2%;
+        width: 59vw;
     }
     .description {
-        margin-left: 1.4rem;
+        font-size: 0.98rem;
+        line-height: 1.6rem;
     }
     .places {
-        margin-left: -3.6rem;
+        margin-left: -0.8rem;
+        font-size: 15px;
+    }    
+    p {
+        margin-left: 12%;
     }
-    .img1{
-        height: 70vh;
+    .places p {
+        margin-right: -7%;
     }
-    .img_title {
-        font-size: 25px;
-        margin-top: -242px;
+    .world_map { 
+        width: 67%;
+        background-size: 100% 36%;
+        margin-top: -45%;
     }
-    .arrow1 ul li.next span {
-        right: 180%;
+    .bb-details {
+        height: 51vh;
+        width: 100vw;
+        top: 536px;
+        right: 0%;
     }
-    
+    .bb-image {
+        position: absolute;
+        top: 500px;
+        right: 0%;
+        z-index: 10;
+        width: 45vw;
+        height: 49vh;
+    }
+    .arr {
+        top: 50px;
+        left: 5.5%;
+    }
+    .r-arrow, .l-arrow {
+        width: 28vw;
+    }
+    .weather {
+        top: 32%;
+    }
+    .img-sun {
+        width: 7vw;
+    }
+    .img-wind {
+        width: 8vw;
+    }
+    .img-direction {
+        width: 7vw;
+    }
+    .wind, .direction {
+        margin-left: 1.2rem;
+    }
+    .stext-value {
+        top: 56%;
+    }
+    .btext-value {
+        top: 62%;
+        font-size: 3rem;
+    }
+    .location-icon {
+        top: 86%;
+        width: 7vw;
+    }
+    .location-text {
+        top: 84%;
+        left: 11%;
+        color: rgb(209, 203, 203);
+    }
+    /* section 5 */
+    .section5 {
+        height: 50vh;
+        margin-top: 6%;
+    }
+    .sec5_img1, .sec5_img2, .sec5_img3 {
+        width: 100vw;
+    }
+    .sec5_img1, .sec5_img2{
+        height: 51vh;
+        width: 33vw;
+    }
+    .sec5_img3 {
+        height: 51vh;
+        width: 36vw;
+    }
+    .sec5_title1, .sec5_title2, .sec5_title3 {
+        font-size: 2rem;
+        position: relative;
+        top: 13%;
+    }
+    .btn1, .btn2, .btn3 {
+        left: 42%;
+        height: 5vh;
+        width: 8vw;
+        position: relative;
+        top: 17%;
+    }
+    .footer-container {
+        height: 33vh;
+    }
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    /* header */
+    .logo-img1 {
+        width: 416%;
+    }
+    .home_header {
+        height: 102vh;
+    }
+    .bg_video {
+        width: unset;
+    }
+    .htitle {
+        top: 40%;
+        left: 9%;
+    } 
+    .htitle1 {
+        font-size: 3.5rem;
+        line-height: 1rem;
+        margin-bottom: 0rem;
+    }   
+    .htitle2 {
+        font-size: 2.9rem;
+        letter-spacing: 0.2rem;
+    }    
+
+    .hscroll {
+        position: relative;
+        top: -86px;
+        left: 31px;
+    }
+    .scroll_btn {
+        top: 83%;
+        right: 10%;
+        height: 10vh;
+        width: 21vw;
+    }
+    .close-img {
+        top: 10%;
+        right: 12.5%;
+    }    
+    /* section 1 */
+    .sec1_header {
+        line-height: 3.8rem;
+        font-size: 2rem;
+        position: relative;
+        left: 14%;
+    }
+    .section1 {
+        height: 166vh;
+        background-image: none;
+    }
+    .left-div {
+        width: 140vw;
+        margin-left: -12%;
+    }
+    .section1_content {
+        font-size: 1rem;
+        margin-top: 9%;
+        line-height: 1.4rem;
+        width: 120%;
+    }
+    .sec1_img3 {
+        display: none;
+    }
+    .sec1_img0 {
+        display: block;
+        width: 85vw;
+        position: relative;
+        top: 6%;
+        left: 23%;
+    }
+    .sec1_img2 {
+        width: 120%;
+        margin-left: 13%;
+        padding-top: 8rem;
+    }
+    /* section 2 */
+    .section2_content {
+        margin-top: 9%;
+        margin-left: 6%;
+        flex-flow: column;
+    }
+    .arrows1 ul {
+        bottom: -173px;
+        left: -92%;
+    } 
+    /* section 3 */
+    .section3 {
+        height: 120vw;
+    }
+    .track img {
+        height: 50vh;
+        width: 298px;
+    }
+    .track_main {
+        margin-top: 125px;
+        font-weight: lighter;
+    } 
+    /* section 4 */
+    .gtext1,.gtext2 {
+        font-size: 30px;
+        margin-left: 2rem;
+    }   
+    .description p {
+        margin-left: -12%
+    }
+    .description {
+        font-size: 0.98rem;
+        line-height: 1.6rem;
+    }
+    .places {
+        margin-left: -0.8rem;
+        font-size: 13px;
+    }    
+    p {
+        margin-left: 12%;
+    }
+    .places p {
+        margin-right: -5%;
+    }
+    .world_map { 
+        width: 93%;
+        background-size: 116% 30%;
+        margin-top: -114%
+    }
+    .bb-details {
+        height: 51vh;
+        width: 100vw;
+        top: 536px;
+        right: 0%;
+    }
+    .bb-image {
+        position: absolute;
+        top: 500px;
+        right: 0%;
+        z-index: 10;
+        width: 47vw;
+        height: 31vh;
+    }
+    .arr {
+        top: 29px;
+        left: 2%;
+    }
+    .r-arrow, .l-arrow {
+        width: 21px;
+    }
+    .weather {
+        top: 28%;
+    }
+    .img-sun {
+        width: 5.5vw;
+    }
+    .img-wind {
+        width: 6vw;
+    }
+    .img-direction {
+        width: 4.5vw;
+    }
+    .wind, .direction {
+        margin-left: 1.2rem;
+    }
+    .stext-value {
+        top: 60%;
+    }
+    .btext-value {
+        top: 66%;
+    }
+    .location-icon {
+        top: 86%;
+    }
+    .location-text {
+        top: 88%;
+        left: 16%;
+        color: rgb(209, 203, 203);
+    }
+    /* section 5 */
+    .section5 {
+        flex-flow: column;
+        height: 120vh;
+    }
+    .sec5_img1, .sec5_img2, .sec5_img3 {
+        width: 100vw;
+    }
+    .sec5_img1, .sec5_img2{
+        height: 82vh;
+    }
+    .sec5_img3 {
+        height: 43vh;
+    }
+    .sec5_title1, .sec5_title2 {
+        font-size: 2rem;
+        position: relative;
+        top: -37%;
+    }
+    .sec5_title3 {
+        font-size: 2rem;
+        position: relative;
+        top: 150px;
+    }
+    .btn1, .btn2, .btn3 {
+        left: 42%;
+        height: 6vh;
+        width: 13vw;
+        position: relative;
+        top: -20%;
+    }
+    .btn3 {
+        top: 162px;
+        left: 43%;
+    }
 }
