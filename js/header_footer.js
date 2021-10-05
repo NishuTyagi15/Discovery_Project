@@ -33,8 +33,8 @@ function menuBar(){
     <div class="menu">
         <div class="main_nav">
             <ul class="navbar_main>
-                <li><a href="#">About DLC</a></li>
-                <li><a href="../pages/ourworld.html"">Our Worlds</a></li>
+                <li><a href="../pages/aboutDLC.html">About DLC</a></li>
+                <li><a href="../pages/ourworld.html">Our Worlds</a></li>
                 <li><a href="#">Experiences</a></li>
                 <li><a href="../pages/gallery.html">Gallery</a></li>
                 <li><a href="#">Press</a></li>
