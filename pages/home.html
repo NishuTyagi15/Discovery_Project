@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@100&display=swap" rel="stylesheet">
     <title>Discovery Land Company</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
             <!-- Header Content -->
         <div class="hcontent">
             <div class="hvideo">
-                <video src="../assets/header/header_video.mp4" data-length="" muted loop autoplay playsinline></video>
+                <video class="bg_video" src="../assets/header/header_video.mp4" data-length="100%" muted loop autoplay playsinline></video>
             </div>  
             <h1 class="htitle">
                 <div class="htitle1">Discover</div>
@@ -49,12 +49,7 @@
                 </div> -->
                 <div class="hscroll">Scroll to explore</div>
             </div>
-            <button type="button" class="scroll_button">
-                <div class="arrow">
-                    <span class="arrow1"></span>
-                    <span class="arrow2"></span>
-                </div>
-            </button>
+            <button class="scroll_btn">&darr;</button>
         </div>
     </div>
 
@@ -64,18 +59,19 @@
             <div class="welcome">
                 <div class="sec1_header">
                     <div class="welcome">Welcome to</div>
-                    <div class="world">our worlds</div>
+                    <div class="world">our world</div>
                 </div>
                 <div class="section1_content">
-                    <p>Discover the unique atmosphere of our private</p>
-                    <p>residential club communities. Once experienced. Never</p>
-                    <p>forgotten. This is classic, comfortable, modern living in</p>
-                    <p>nature’s most spectacular settings worldwide.</p>
-                    <p>Reassuringly exclusive. Generously welcoming. Find</p>
-                    <p>your unique world – a place where families love to be;</p>
-                    <p>creating unforgettable moments, together.</p>
+                    <p>Discover the unique atmosphere of our private
+                    residential club communities. Once experienced. Never
+                    forgotten. This is classic, comfortable, modern living in
+                    nature’s most spectacular settings worldwide.
+                    Reassuringly exclusive. Generously welcoming. Find
+                    your unique world – a place where families love to be;
+                    creating unforgettable moments, together.</p>
                 </div>
             </div>
+            <img class="sec1_img0" src="/assets/home/sec1_img3.jpg" alt="">
             <div>
                 <img class="sec1_img2" src="/assets/home/sec1_img2.jpg" alt="">
             </div>
@@ -92,7 +88,11 @@
             <div class="explore">Explore</div>
             <div class="our_world">Our Worlds</div>
         </div>
-        <div>
+        <div class="arrows1">
+            <ul>
+                <li class="prev"><span></span></li>
+                <li class="next"><span></span></li>
+            </ul>
         </div>
     </div>
 
@@ -111,31 +111,93 @@
             <div class="gtext1">Lands of</div>
             <div class="gtext2">Discovery</div>
             <div class="description">
-                <p>A world away from the day-to-day.Your escape.Your haven.Your world.</p>
-                <p>Explore the map below and take a journey to our communities.</p>
+                <p>A world away from the day-to-day.Your escape.Your haven.Your world.
+                Explore the map below and take a journey to our communities.</p>
             </div>
             <div class="places">
                 <p>North Americs&Caribbean</p>      <p>Hawaii</p>       <p>Europe</p>
             </div>   
         </div>
-        <div class ="world-map"></div>
-        <div class ="place-box"></div>
+        <div class ="world_map"></div>
+        <div class ="place_box"></div>
+        <div class="black-box">
+            <img class="bb-image" src="../assets/home/iron_horse.jpg" alt="">
+            <div class="bb-details">
+                <div class ="content-box">
+                <div class="arr">
+                    <div class="l-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.06 20.91">
+                            <path
+                                d="M28.06 9.81H2.2l8.89-8.9c.01-.03-.9-.91-.9-.91l-10 10c0 .01-.01.01-.02.02l-.04.04c-.01.01-.02.02-.02.03-.01.01-.02.03-.03.05-.01.01-.01.03-.02.04 0 .01-.01.02-.01.03v.02c-.01.01-.01.03-.01.04 0 .02-.01.03-.01.05 0 .01 0 .03-.01.04 0 .02 0 .03-.01.05v.1c0 .02 0 .03.01.05 0 .01 0 .03.01.04 0 .02.01.03.01.05 0 .01.01.03.01.04 0 .01 0 .01.01.02 0 .01.01.02.02.03.01.01.01.03.02.04.01.02.02.03.03.05.01.01.02.02.02.03.01.01.02.03.04.04l.02.02 10 10c0 .01.91-.91.91-.91L2.2 11.1h25.86V9.81z">
+        
+                            </path>
+                        </svg>
+        
+                    </div>
+                    <div class="r-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.06 20.91">
+                            <path
+                                d="M0 11.1h25.86L16.97 20c0 .04.91.92.91.91l10-10c0-.01.01-.01.02-.02l.04-.04c.01-.01.02-.02.02-.03.01-.01.02-.03.03-.05.01-.01.01-.03.02-.04 0-.01.01-.02.01-.03v-.02c.01-.01.01-.03.01-.04 0-.02.01-.03.01-.05 0-.01 0-.03.01-.04 0-.02 0-.03.01-.05v-.05-.05c0-.02 0-.03-.01-.05 0-.01 0-.03-.01-.04 0-.02-.01-.03-.01-.05 0-.01-.01-.03-.01-.04 0-.01 0-.01-.01-.02 0-.01-.01-.02-.02-.03-.01-.01-.01-.03-.02-.04-.01-.02-.02-.03-.03-.05-.01-.01-.02-.02-.02-.03-.01-.01-.02-.03-.04-.04.01 0 0-.01 0-.01l-10-10c0-.01-.91.91-.91.91l8.89 8.9H0v1.29z">
+                    
+                            </path>
+                        </svg>
+                    
+                    </div>
+        
+                </div>
+                <div class="weather">
+                    <div class ="temp">
+                       <img class = "img-sun" src = "../assets/home/sun.png.crdownload" alt="">
+                       <div class="temp-value">60° F</div>
+                 </div>
+                    <div class ="wind">
+                        <img class = "img-wind" src = "../assets/home/wind-background-10.png.crdownload" alt="">
+                       <div class="wind-value">5.75 mph </div>
+                        
+                    </div>
+                    <div class ="direction">
+                        <img class = "img-direction" src = "../assets/home/compass.png" alt="">
+                        <div class="direction-value">0°</div>   
+                    </div>
+                </div>
+                <div class="Heading">
+                    <div class = "small-text">
+                        <div class ="stext-value">Whitefish, Montana</div>
+                    </div>
+                    <div class="big-text">
+                        <div class ="btext-value">Iron Horse</div>
+                    </div>
+                    </div>
+                    <div class = "location">
+                        <img class="location-icon" src="../assets/home/loaction.png" alt="">
+                        <div class = "location-text">  22.954708° N / -109.816218° W</div>
+        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
     </div>
 
     <!-- section 5 -->
 
-    <div class="section5">
+    <div class="section5" id="section5">
         <div class="sec5_img" id="img_video1">
-            <img class="img1" src="../assets/home/manexp.jpg" onclick="videoImage1()">
-            <div class="img_title">Experiences</div>
+            <img class="img1  sec5_img1" src="../assets/home/manexp.jpg" onclick="videoImage1()">
+            <div class="img_title sec5_title1">Experiences</div>
+            <button class="next_btn btn1">&rarr;</button>
         </div>
         <div class="sec5_img" id="img_video2">
-            <img class="img1" src="../assets/home/lifestyle.jpg" onclick="videoImage2()">
-            <div class="img_title">Lifestyle</div>
+            <img class="img1 sec5_img2" src="../assets/home/lifestyle.jpg" onclick="videoImage2()">
+            <div class="img_title sec5_title2">Lifestyle</div>
+            <button class="next_btn btn2">&rarr;</button>
         </div>
         <div class="sec5_img" id="img_video3">
-            <img class="img1" src="../assets/home/wellness.jpg" onclick="videoImage3()">
-            <div class="img_title">Wellness</div>
+            <img class="img1 sec5_img3" src="../assets/home/wellness.jpg" onclick="videoImage3()">
+            <div class="img_title sec5_title3">Wellness</div>
+            <button class="next_btn  btn3">&rarr;</button>
         </div>
     </div>
 
