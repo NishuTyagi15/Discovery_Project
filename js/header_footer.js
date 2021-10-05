@@ -3,9 +3,10 @@ window.onload = header_content();
 
 function header_content() {
     const headerHtml = `<div class="item-container">
+    <a href="../pages/home.html">
     <div class="logo-content1">
         <img class="logo-img1" src="../assets/header/namelogo.svg" alt="Logo Image">
-    </div>
+    </div></a>
         <div class="nav-content">
             <div class="u1"><a href="../pages/aboutDLC.html">About DLC</a></div>
             <div class="u2"><a href="../pages/ourWorld.html">Our Worlds</a></div>

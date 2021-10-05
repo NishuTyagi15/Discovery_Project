@@ -1,0 +1,156 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+ body {
+    background-color: #fff;
+}
+
+/* Header */
+
+.exp_header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.header-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: initial;
+    min-height: unset;
+}
+
+.item-container {
+    position: absolute;
+    top: 76px;
+    left: -100px;
+    font-weight: 900;
+    color: #FFFFFF;
+    z-index: 5;
+}
+
+.logo-img1 {
+    width: 35vw;
+}
+
+.menubar {
+    z-index: 10;
+}
+
+.bg_video {
+    width: 100vw;
+}
+
+.close-img {
+    top: 9.8%;
+    right: 6.5%;
+}
+
+.exp_title {
+    color: #FFFFFF;
+    position: absolute;
+    font-weight: lighter;
+    top: 36%;
+    left: 21%;
+    z-index: 5;
+}
+
+.exp_title1 {
+    font-family: 'Spectral', serif;
+    font-size: 3.9rem;
+    margin-bottom: -7%;
+}
+
+.exp_title2 {
+    font-family: Montserrat;
+    letter-spacing: 4.8px;
+    font-size: 3.2rem;
+    margin-left: 4px;
+}
+
+.exp_scroll {
+    position: absolute;
+    color: #fff;
+    opacity: 0.8;
+    bottom: 15%;
+    left: 10%;
+}
+
+.scroll_btn {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    height: 10vh;
+    width: 5vw;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    border-radius: 50%;
+}
+
+/* section 1 */
+
+.section1_exp {
+    font-family: 'Spectral', serif;
+    font-size: 1.9rem;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    left: 15%;
+    top: 30%;
+    opacity: 1;
+    width: 72%;
+    height: 65vh;
+    color: #111;
+    letter-spacing: 1px;
+    transform: translate(0px, 0px);
+}
+
+/* section 2 */
+
+.section2_exp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+    height: 135vh;
+    margin-top:-7%;
+}
+
+.left_sec1 {
+    position: relative;
+    left: 15%;
+    top: 24%;
+    width: 60%;
+}
+
+.h_exp {
+    font-family: 'Spectral', serif;
+    font-size: 2rem;
+}
+
+.p_exp {
+    font-family: Montserrat;
+    color: rgb(121, 117, 117);
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+
+.exp_img1 {
+    width: 38vw;
+    height: 82vh;    
+    width: 40vw;
+    position: relative;
+    top: 10%;
+    height: 105vh;
+}
+
+.exp_img0 {
+    display: none;
+}
