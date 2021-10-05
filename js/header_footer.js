@@ -10,7 +10,7 @@ function header_content() {
         <div class="nav-content">
             <div class="u1"><a href="../pages/aboutDLC.html">About DLC</a></div>
             <div class="u2"><a href="../pages/ourWorld.html">Our Worlds</a></div>
-            <div class="u3"><a href="#">Experiences</a></div>
+            <div class="u3"><a href="../pages/experience.html">Experiences</a></div>
             <div class="u4"><a href="../pages/gallery.html">Gallery</a></div>
             <div class="u5"><a href="#">Press</a></div>
         </div>

@@ -154,3 +154,207 @@ html, body {
 .exp_img0 {
     display: none;
 }
+
+/* golf and wellness */
+
+.golf-image > img ,.Wellness-image > img,.outdoor-image >img {
+    width: 75%;
+    height: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+.exp-article {
+    width: 100%;
+    padding-top: 10%;
+    height: 125vh;
+    background-color: #f3f3f3;
+    position: relative;   
+}
+.articles {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 23%;
+}
+
+.article-back {
+    height: 75%;
+    width: 65%;
+    margin-right: 7%;
+    background-color: lightgray;
+}
+
+.article-content { 
+    width: 90%;
+    display: flex;
+    justify-content: end;   
+}
+
+.article-text {
+    position: absolute;
+    height: 70vh;
+    width: 35vw;
+    background-color: #fff;
+    z-index: 5;
+    top: 24%;
+    right: 7%;
+    padding: 2%;
+}
+
+.article-text > h1 { 
+    font-weight: lighter;
+    font-size: 2.5rem;
+    position: relative;
+    right: -11%;
+}
+
+.article-text > p {
+    color: #777777;
+    font-family: Montserrat;
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 2rem;
+    width: 31vw;
+    position: relative;
+    left: 11%;
+    word-spacing: 1px;
+}
+
+.article-text > h3 {
+    border: 1px solid lightgray;
+    text-align: center;
+    width: fit-content;
+    color: #000;
+    padding: 20px 50px;
+    position: relative;
+    left: 11%;
+    top: 4%;
+    font-weight: lighter;
+}
+
+.article-text > h3:hover {
+    border: 2px solid #000;
+}
+
+/* section 5 */
+
+.exp-article1 {
+    direction:rtl;
+    width: 100vw;
+    padding-top: 10%;
+    height: 128vh;
+    background-color: #f3f3f3;
+    position: relative; 
+}
+.articles1 {
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    width: 100vw;
+    position: absolute;
+    margin-top: 23%;
+}
+
+.article-back1 {
+    height: 80vh;
+    width: 57vw;
+    background-color: lightgray;
+}
+
+.article-content1 {
+    width: 90%;
+    display: flex;
+    justify-content: end; 
+}
+
+.article-text1 {
+    direction: ltr;
+    position: absolute;
+    height: 72vh;
+    width: 35vw;
+    background-color: #fff;
+    z-index: 5;
+    top: 24%;
+    left: 7%;
+    padding: 2%;
+}
+
+.article-text1 > h1 {
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    position: relative;
+    left: 8%;
+    letter-spacing: -0.1rem;
+}
+
+.article-text1 > p {
+    color: #777777;
+    font-family: Montserrat;
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 2rem;
+    width: 30vw;
+    position: relative;
+    left: 9%;
+    word-spacing: 1px;
+}
+
+.article-text1 > h3 {
+    border: 1px solid lightgray;
+    text-align: center;
+    width: fit-content;
+    color: #000;
+    padding: 20px 50px;
+    position: relative;
+    left: 9%;
+    top: 4%;
+    font-weight: lighter;
+}
+
+.article-text1 > h3:hover {
+    border: 2px solid #000;
+}
+
+/* section 6 */
+
+.section6_exp {
+    margin-top: 7%;
+    height: 80vh;
+    width: 100vh;
+}
+
+.section6_exp a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.exp_img9 {
+    height: 80vh;
+    width: 250vh;
+    filter: brightness(65%);
+}
+
+.h3_exp {
+    position: relative;
+    bottom: 75%;
+    left: 95%;
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    position: relative;
+    bottom: 69%;
+    left: 103%;
+    border: 1px solid rgb(204, 198, 198);
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 20px 50px;
+}
