@@ -474,11 +474,6 @@ html, body {
 
 /* Media Queries */
 
-@media screen and (min-width: 900px) and (max-width: 1024px) {
-    
-}
-
-
 @media screen and (min-width: 700px) and (max-width: 900px) {
     /* header section */
     .dlc_header {
@@ -797,7 +792,7 @@ html, body {
         left: 6.5%;
     }
     .arrows1 ul li.next span {
-        left: 28.5%;
+        left: 27.5%;
     }
     /* section 5 */
     .section5_dlc {
