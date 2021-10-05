@@ -22,7 +22,7 @@
             <!-- Header Content -->
         <div class="hcontent">
             <div class="hvideo">
-                <video src="../assets/header/header_video.mp4" data-length="" muted loop autoplay playsinline></video>
+                <video style="width: 100vw;" src="../assets/header/header_video.mp4" data-length="" muted loop autoplay playsinline></video>
             </div>  
             <h1 class="htitle">
                 <div class="htitle1">Discover</div>
@@ -124,46 +124,84 @@
         </div>
         <div class ="world_map"></div>
         <div class ="place_box"></div>
-
-        <div class="globe_main">
-            <div class="left_div"></div>
-            <div class="right_div">
-                <div class="stack_bottom">
-                    <div class="stack_top"></div>
+        <div class="black-box">
+            <img class="bb-image" src="../assets/home/iron_horse.jpg" alt="">
+            <div class="bb-details">
+                <div class ="content-box">
+                <div class="arr">
+                    <div class="l-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.06 20.91">
+                            <path
+                                d="M28.06 9.81H2.2l8.89-8.9c.01-.03-.9-.91-.9-.91l-10 10c0 .01-.01.01-.02.02l-.04.04c-.01.01-.02.02-.02.03-.01.01-.02.03-.03.05-.01.01-.01.03-.02.04 0 .01-.01.02-.01.03v.02c-.01.01-.01.03-.01.04 0 .02-.01.03-.01.05 0 .01 0 .03-.01.04 0 .02 0 .03-.01.05v.1c0 .02 0 .03.01.05 0 .01 0 .03.01.04 0 .02.01.03.01.05 0 .01.01.03.01.04 0 .01 0 .01.01.02 0 .01.01.02.02.03.01.01.01.03.02.04.01.02.02.03.03.05.01.01.02.02.02.03.01.01.02.03.04.04l.02.02 10 10c0 .01.91-.91.91-.91L2.2 11.1h25.86V9.81z">
+        
+                            </path>
+                        </svg>
+        
+                    </div>
+                    <div class="r-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.06 20.91">
+                            <path
+                                d="M0 11.1h25.86L16.97 20c0 .04.91.92.91.91l10-10c0-.01.01-.01.02-.02l.04-.04c.01-.01.02-.02.02-.03.01-.01.02-.03.03-.05.01-.01.01-.03.02-.04 0-.01.01-.02.01-.03v-.02c.01-.01.01-.03.01-.04 0-.02.01-.03.01-.05 0-.01 0-.03.01-.04 0-.02 0-.03.01-.05v-.05-.05c0-.02 0-.03-.01-.05 0-.01 0-.03-.01-.04 0-.02-.01-.03-.01-.05 0-.01-.01-.03-.01-.04 0-.01 0-.01-.01-.02 0-.01-.01-.02-.02-.03-.01-.01-.01-.03-.02-.04-.01-.02-.02-.03-.03-.05-.01-.01-.02-.02-.02-.03-.01-.01-.02-.03-.04-.04.01 0 0-.01 0-.01l-10-10c0-.01-.91.91-.91.91l8.89 8.9H0v1.29z">
+                    
+                            </path>
+                        </svg>
+                    
+                    </div>
+        
+                </div>
+                <div class="weather">
+                    <div class ="temp">
+                       <img class = "img-sun" src = "../assets/home/sun.png.crdownload" alt="">
+                       <div class="temp-value">60° F</div>
+                 </div>
+                    <div class ="wind">
+                        <img class = "img-wind" src = "../assets/home/wind-background-10.png.crdownload" alt="">
+                       <div class="wind-value">5.75 mph </div>
+                        
+                    </div>
+                    <div class ="direction">
+                        <img class = "img-direction" src = "../assets/home/compass.png" alt="">
+                        <div class="direction-value">0°</div>   
+                    </div>
+                </div>
+                <div class="Heading">
+                    <div class = "small-text">
+                        <div class ="stext-value">Whitefish, Montana</div>
+                    </div>
+                    <div class="big-text">
+                        <div class ="btext-value">Iron Horse</div>
+                    </div>
+                    </div>
+                    <div class = "location">
+                        <img class="location-icon" src="../assets/home/loaction.png" alt="">
+                        <div class = "location-text">  22.954708° N / -109.816218° W</div>
+        
+                    </div>
                 </div>
             </div>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
 
     <!-- section 5 -->
 
-    <div class="section5">
+    <div class="section5" id="section5">
         <div class="sec5_img" id="img_video1">
             <img class="img1" src="../assets/home/manexp.jpg" onclick="videoImage1()">
             <div class="img_title">Experiences</div>
-            <div class="arrow1">
-                <ul>
-                    <li class="next"><span></span></li>
-                </ul>
-            </div>
+            <button class="next_btn">&rarr;</button>
         </div>
         <div class="sec5_img" id="img_video2">
             <img class="img1" src="../assets/home/lifestyle.jpg" onclick="videoImage2()">
             <div class="img_title">Lifestyle</div>
-            <div class="arrow1">
-                <ul>
-                    <li class="next"><span></span></li>
-                </ul>
-            </div>
+            <button class="next_btn">&rarr;</button>
         </div>
         <div class="sec5_img" id="img_video3">
             <img class="img1" src="../assets/home/wellness.jpg" onclick="videoImage3()">
             <div class="img_title">Wellness</div>
-            <div class="arrow1">
-                <ul>
-                    <li class="next"><span></span></li>
-                </ul>
-            </div>
+            <button class="next_btn">&rarr;</button>
         </div>
     </div>
 
