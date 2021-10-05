@@ -636,7 +636,7 @@ html, body {
         letter-spacing: 0rem;
     }
     .section1 {
-        height: 190vh;
+        height: 200vh;
         background-image: none;
     }
     .left-div {
@@ -743,18 +743,19 @@ html, body {
     }
     .weather {
         top: 32%;
+        font-size: 1.5rem;
     }
     .img-sun {
-        width: 7vw;
+        width: 4.5vw;
     }
     .img-wind {
-        width: 8vw;
+        width: 5vw;
     }
     .img-direction {
-        width: 7vw;
+        width: 4.5vw;
     }
     .wind, .direction {
-        margin-left: 1.2rem;
+        margin-left: 4.2rem;
     }
     .stext-value {
         top: 56%;
@@ -764,12 +765,13 @@ html, body {
         font-size: 3rem;
     }
     .location-icon {
-        top: 86%;
-        width: 7vw;
+        top: 81%;
+        left: 8%;
+        width: 5vw;
     }
     .location-text {
         top: 84%;
-        left: 11%;
+        left: 14%;
         color: rgb(209, 203, 203);
     }
     /* section 5 */
