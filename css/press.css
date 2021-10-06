@@ -272,7 +272,7 @@ h3.head1 {
 }
 
 /* media queries */
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 760px) and (max-width: 1024px) {
     /* header section */
     .press_header {
         height: 50vh;
@@ -343,9 +343,116 @@ h3.head1 {
     }
     /* section 2 */
     .section2_press {
-        height: 100vh;
+        height: 105vh;
     }
     .press_main {
-        height: 52vh;
+        height: 45vh;
     }
+    .footer-container {
+        height: 38vh;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    /* header */
+    .logo-img1 {
+        width: 120%;
+    }
+    .header-content {
+        width: 80%;
+    }
+    .item-container {
+        top: 5.5rem;
+    }
+    .press_head {
+        height: 100vh;
+    }
+    .press_img {
+        height: 100vh;
+    } 
+    .press_title {
+        top: 46%;
+        left: 9%;
+    } 
+    .press_title1 {
+        font-size: 2.5rem;
+        letter-spacing: -0.1rem;
+    }   
+    .press_title2 {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+    }         
+    .press_scroll {
+        display: none;
+    }
+    .scroll_btn {
+        top: 79%;
+        right: 37%;
+        height: 11vh;
+        width: 21vw;
+    }
+    .close-img {
+        top: 11%;
+        right: 7%;
+    } 
+    /* section 1 */
+    .section1_press {
+        height: 130vh;
+    }
+    h3.head1 {
+        font-size: 1.9rem;
+        top: 0%;
+    }
+    .image1 > img {
+        width: 100vw;
+        height: 34vh;
+        top: 11%;
+        left: 0%;
+    }
+    .article_text {
+        height: 80vh;
+        width: 88vw;
+        top: 29%;
+        right: 4%;
+    }
+    .article_text > p {
+        font-size: 0.9rem;
+        font-weight: lighter;
+        line-height: 1.5rem;
+        width: 71vw;
+        left: 9%;
+    }
+    .article_text > h1 {
+        font-size: 1.7rem;
+        width: 69vw;
+        left: 9%;
+    }
+    .article_text > h3 {
+        left: 9%;
+    }
+    .press_nav {
+        top: 95%;
+        left: 32%;
+    }
+    .nav_main {
+        font-size: 0.9rem;
+    }
+    .prev svg, .next svg {
+        height: 0.9rem;
+    }
+    /* section 2 */
+    .section2_press {
+        height: 181vh;
+    }
+    .press_main {
+        height: 50vh;
+        grid-template-columns: 1fr;
+    } 
+    .press_items {
+        position: relative;
+        top: -50%;
+    }
+    .footer-container {
+        height: 56vh;
+    }  
 }
