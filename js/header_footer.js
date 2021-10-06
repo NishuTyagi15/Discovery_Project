@@ -36,9 +36,9 @@ function menuBar(){
             <ul class="navbar_main>
                 <li><a href="../pages/aboutDLC.html">About DLC</a></li>
                 <li><a href="../pages/ourworld.html">Our Worlds</a></li>
-                <li><a href="#">Experiences</a></li>
+                <li><a href="../pages/experience.html">Experiences</a></li>
                 <li><a href="../pages/gallery.html">Gallery</a></li>
-                <li><a href="#">Press</a></li>
+                <li><a href="../press.html">Press</a></li>
             </ul>
         </div>
         <div class="sub_nav">
@@ -74,19 +74,19 @@ function footer_content() {
         <div class="footer-main">
             <ul class="foot-content">
                 <li class="foot-menu ul1">
-                    <a href="#" class="foot-link">About DLC</a>
+                    <a href="../aboutDLC.html" class="foot-link">About DLC</a>
                 </li>
                 <li class="foot-menu ul2">
                     <a href="../pages/ourWorld.html" class="foot-link">Our Worlds</a>
                 </li>
                 <li class="foot-menu ul3">
-                    <a href="#" class="foot-link">Experiences</a>
+                    <a href="../pages/experience.html" class="foot-link">Experiences</a>
                 </li>
                 <li class="foot-menu ul4">
                     <a href="../pages/gallery.html" class="foot-link">Gallery</a>
                 </li>
                 <li class="foot-menu ul5">
-                    <a href="#" class="foot-link">Press</a>
+                    <a href="../pages/press.html" class="foot-link">Press</a>
                 </li>                    
             </ul>
             <ul class="foot-content">
